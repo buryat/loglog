@@ -12,7 +12,7 @@ function generateWords($count) {
 
     while ($count > 0) {
         $word = '';
-        for ($j = 0; $j < rand(1, 8); $j++) { // from 'a' to 'abcdefgh'
+        for ($j = 0; $j < rand(1, 8); $j++) { // from 1char to 8chars
             $word .= chr(rand(97, 122)); // a-z
         }
 
@@ -31,7 +31,7 @@ function cardinality($arr) {
 }
 
 class LogLog {
-    const HASH_LENGTH = 32; // in bites
+    const HASH_LENGTH = 32; // bites
     const HASH_K = 5; // HASH_LENGTH = 2 ^ HASH_K
     const ALPHA = 0.77308249784697296; // (Gamma(-1/32) * (2^(-1/32) - 1) / ln2)^(-32)
 
@@ -125,6 +125,7 @@ class LogLog {
         return floor($E);
     }
 }
+
 
 $words = generateWords(10000);
 echo "Number of words\n" . count($words) . "\n";

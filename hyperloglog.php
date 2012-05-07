@@ -7,13 +7,12 @@
  * @url         http://algo.inria.fr/flajolet/Publications/FlFuGaMe07.pdfs
  */
 
-
 function generateWords($count) {
     $result = array();
 
     while ($count > 0) {
         $word = '';
-        for ($j = 0; $j < rand(1, 8); $j++) { // from 'a' to 'abcdefgh'
+        for ($j = 0; $j < rand(1, 8); $j++) { // from 1char to 8chars
             $word .= chr(rand(97, 122)); // a-z
         }
 
@@ -32,7 +31,7 @@ function cardinality($arr) {
 }
 
 class HyperLogLog {
-    const HASH_LENGTH = 32; // in bites
+    const HASH_LENGTH = 32; // bites
     const HASH_K = 5; // HASH_LENGTH = 2 ^ HASH_K
     const ALPHA = 0.697122946; // 1 / (32 * integral(0,inf)( (log2(1+1/(1+x)))^32 dx))
 
@@ -129,6 +128,7 @@ class HyperLogLog {
         return floor($Z);
     }
 }
+
 
 $words = generateWords(10000);
 echo "Number of words\n" . count($words) . "\n";
