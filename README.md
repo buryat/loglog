@@ -20,7 +20,7 @@ For example, hash function returns fixed-length values `m = 8bits`, param `2^k =
 
 Set `M = [0, 0, 0, 0, 0, 0, 0, 0], M.length = m`
 
-First `k` bits of hashed value will be the index (bucket) in `M`, and looking for a first 1bit in others bits of hashed value.
+First `k` bits of hashed value will be the index (bucket) in `M`, and get offset of a first 1bit in others bits of hashed value.
 
 So, for `elements[0]` `index = 0` and `scan1 = 1`, `elements[1]` `index = 2` and `scan1 = 3`.
 
@@ -28,7 +28,10 @@ Then `M[index] = max(M[index], scan1)`
 
 After all you have M with smallest hashes for each bucket.
 
-And then you need to somehow summarize elements in M and multiply it on coefficients which depends on hash length.
+Then you need to somehow summarize elements in M and multiply it on coefficients which depends on hash length. And the result will be estimation of cardinality of the data set.
+
+As you can see, algorithms use small amount of memory because they keep only `M` while execution and `M` has fixed length itself.
+Also it's clear that range of hash values must be greater than number of unique elements in the data set, otherwise some elements will have same hash.
 
 ### Sources
 
