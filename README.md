@@ -33,8 +33,10 @@ And then you need to somehow summarize elements in M and multiply it on coeffici
 ### Sources
 
 1. Marianne Durand and Philippe Flajolet. Loglog Counting of Large Cardinalities. G. Di Battista and U. Zwick (Eds.): ESA 2003, LNCS 2832, pp. 605–617, 2003.
-[http://algo.inria.fr/flajolet/Publications/DuFl03-LNCS.pdf]()
+[http://algo.inria.fr/flajolet/Publications/DuFl03-LNCS.pdf](http://algo.inria.fr/flajolet/Publications/DuFl03-LNCS.pdf)
 
 2. Olivier Gandouet and Alain Jean-Marie. LogLog counting for the estimation of IP trafﬁc. Fourth Colloquium on Mathematics and Computer Science, DMTCS proc. AG, pp. 119–128, 2006. 
-[http://mathinfo06.iecn.u-nancy.fr/papers/dmAG119-128.pdf]()3. Philippe Flajolet, Éric Fusy, Olivier Gandouet and Frédéric Meunier. HyperLogLog: the analysis of a near-optimal cardinality estimation algorithm. 2007 Conference on Analysis of Algorithms, DMTCS proc. AH, pp. 127–146, 2007.
-[http://algo.inria.fr/flajolet/Publications/FlFuGaMe07.pdf]()
+[http://mathinfo06.iecn.u-nancy.fr/papers/dmAG119-128.pdf](http://mathinfo06.iecn.u-nancy.fr/papers/dmAG119-128.pdf)
+
+3. Philippe Flajolet, Éric Fusy, Olivier Gandouet and Frédéric Meunier. HyperLogLog: the analysis of a near-optimal cardinality estimation algorithm. 2007 Conference on Analysis of Algorithms, DMTCS proc. AH, pp. 127–146, 2007.
+[http://algo.inria.fr/flajolet/Publications/FlFuGaMe07.pdf](http://algo.inria.fr/flajolet/Publications/FlFuGaMe07.pdf)
