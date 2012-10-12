@@ -1,9 +1,10 @@
 /**
  * @author      Vadim Semenov <i@sedictor.ru>
- * @date        5/6/12
- * @time        11:04 PM
+ * @date        10/12/12
+ * @time        1:24 PM
  * @description LogLog algorithm implementation
  * @url         http://algo.inria.fr/flajolet/Publications/DuFl03-LNCS.pdf
+ * @license     MIT, see LICENSE-MIT.md
  */
 
 function generateWords(count) {

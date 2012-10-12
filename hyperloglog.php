@@ -1,10 +1,11 @@
 <?php
 /**
  * @author      Vadim Semenov <i@sedictor.ru>
- * @date        5/6/12
- * @time        10:48 PM
+ * @date        10/12/12
+ * @time        1:25 PM
  * @description HyperLogLog algorithm implementation
  * @url         http://algo.inria.fr/flajolet/Publications/FlFuGaMe07.pdfs
+ * @license     MIT, see LICENSE-MIT.md
  */
 
 function generateWords($count) {
